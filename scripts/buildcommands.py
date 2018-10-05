@@ -203,8 +203,8 @@ def build_identify(cmd_by_id, msg_to_id, responses, static_strings
             out.append('\n   ')
         out.append(" 0x%02x," % (ord(zdata[i]),))
     fmt = """
-// version: %s
-// build_versions: %s
+/* version: %s */
+/* build_versions: %s */
 
 const uint8_t command_identify_data[] PROGMEM = {%s
 };
